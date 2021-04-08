@@ -2,7 +2,7 @@ package Examen;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
+//desde 
 
 public class Main {
 
@@ -17,7 +17,7 @@ public class Main {
 		int op=0;
 
 		
-		System.out.println("Número de dias que quieres almacenar");
+		System.out.println("NÃºmero de dias que quieres almacenar");
 		a=s.nextInt();
 		s.nextLine();
 		
@@ -32,14 +32,14 @@ public class Main {
 			o3 =s.nextLine();
 			System.out.println("Postres");
 			o4 =s.nextLine();
-			System.out.println("Número de comensales");
+			System.out.println("NÃºmero de comensales");
 			String dn=s.nextLine();
 			n=Integer.parseInt(dn);
 			
 			array1[i] = new Examen(o1, o2, o3,o4, n);
 		}
 		for (int i=0; i<array1.length; i++) {
-			System.out.println("Dia de la semana: " + array1[i].getOpcion1() + " Primer plato: " + array1[i].getOpcion2() + "  Sgundo plato: " + array1[i].getOpcion3() +" Postre: " + array1[i].getOpcion4() + " Número de comensales : " + array1[i].getNumero());
+			System.out.println("Dia de la semana: " + array1[i].getOpcion1() + " Primer plato: " + array1[i].getOpcion2() + "  Sgundo plato: " + array1[i].getOpcion3() +" Postre: " + array1[i].getOpcion4() + " NÃºmero de comensales : " + array1[i].getNumero());
 		}
 		
 		
@@ -47,7 +47,7 @@ public class Main {
 			
 		
 		System.out.println("1)Dia con mas comensales");
-		System.out.println("2)Número total de comensales en toda la semana");
+		System.out.println("2)NÃºmero total de comensales en toda la semana");
 		System.out.println("3)Postres de la semana ordenados alfabeticamente");
 		System.out.println("4)Datos de un dia concreto");
 		System.out.println("5)Finalizar");
@@ -99,7 +99,7 @@ public class Main {
 			for (int i=0; i<array1.length; i++) {
 				
 				if(array1[i].getOpcion1().equalsIgnoreCase(dia)) {
-					System.out.println("Dia de la semana: " + array1[i].getOpcion1() + " Primer plato: " + array1[i].getOpcion2() + "  Sgundo plato: " + array1[i].getOpcion3() +" Postre: " + array1[i].getOpcion4() + " Número de comensales: " + array1[i].getNumero());
+					System.out.println("Dia de la semana: " + array1[i].getOpcion1() + " Primer plato: " + array1[i].getOpcion2() + "  Sgundo plato: " + array1[i].getOpcion3() +" Postre: " + array1[i].getOpcion4() + " NÃºmero de comensales: " + array1[i].getNumero());
 				}
 				;
 			}
